@@ -482,7 +482,7 @@
                     : `https://cdn.discordapp.com/embed/avatars/0.png`;
 
                 // Determine current activity
-                let activityText = "Chilling...";
+                let activityText = "Offline";
                 if (data.activities && data.activities.length > 0) {
                     // Try to find a game or Spotify (ignoring custom status which is type 4)
                     const activity = data.activities.find(a => a.type !== 4) || data.activities[0];
